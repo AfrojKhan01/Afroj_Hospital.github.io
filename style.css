@@ -31,6 +31,25 @@ body::-webkit-scrollbar-thumb{
     height: 100vh;
     padding-bottom: 30px;
 }
+
+.menu-icon{
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1;
+    color: white;
+    display: none;
+  }
+  .cross{
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1;
+    display: none;
+    color: white;
+    display: none;
+  }
+  .appointment{
+    display: none;
+}
 header{
     display: flex;
     justify-content: space-around;
@@ -471,35 +490,37 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 .box{
-    width:230px;
+    width:250px;
 }
 .box>p{
     color: #514e4e;
     margin: 30px 0px;
+    font-size: 20px;
 }
 .box>.icon>i{
     color: #1c8bd1;
-    margin-right: 15px;
-    font-size: 20px;
+    margin-right: 35px;
+    font-size: 35px;
 }
 .box1>li>a{
     text-decoration: none;
+    font-size: 20px;
     color: #514e4e;
 }
 .box1>li{
     list-style-type: none;
     padding-inline-start: none;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 .box1{
     margin-top: 50px;
 }
 .afroj{
     text-align: center;
-    margin: 100px 0px 20px;
+    margin: 50px 0px 20px;
 }
 
 li>a:hover{
@@ -507,35 +528,122 @@ li>a:hover{
     transition: all 0.3s ease-in-out;
 }
 
-@media screen and (min-width: 1100px) {
-       .menu-icon{
-        display: none;
-       } 
-       .cross{
-        display: none;
-       }
-       .appointment{
-        display: none;
+
+@media (max-width: 1025px){
+    .pad{
+        padding: 0px 50px;
+    }  
+    
+    section{
+        margin: 0px 50px;
     }
+    .hero-left{
+        margin-top: 50px;
+    }
+    
+    
+    .hero-right{
+        width: 300px;
+        margin-top: 50px;
+    }
+    .hero-right>h1{
+        padding: 0 0 0 10px;
+    }
+
+    form>input[type="submit"]{
+        margin: 20px 0px 30px 0px;
+    }
+    
+    
+    .div-area1{
+        margin-top: 50px;
+        padding-bottom: 0px;
+    }
+    .div{
+        width: 300px;
+    }
+    .div>.img-text{
+        padding: 15px 0px;
+    }
+    .div>.img-text>img{
+        width: 50px;
+    }
+    .div>.list{
+        padding: 20px 30px;
+    }
+
+    
+    
+    .div-area2{
+        margin-top: 50px;
+        padding-bottom: 0px;
+    }
+    .div-area2>.div{
+        padding: 20px 0 20px 20px;
+        width: 250px;
+    }
+    
+    
+    
+    .mega-container{
+        margin-top: 50px;
+    }
+    .container1>.one{
+        margin-right: 60px;
+    }
+    .container1>.two{
+        margin-right: 60px;
+    }
+
+    
+    .main-pricing{
+        margin-top: 50px;
+    }
+    .pricing{
+        width: 250px;
+        padding: 10px 20px;
+    }
+
+    footer{
+        margin-top: 0px;
+        gap: 20px;
+    }
+    .box{
+        width:200px;
+    }
+    .box>p{
+        color: #514e4e;
+        margin: 28px 0px;
+    }
+    .box>.icon>i{
+        margin-right: 20px;
+        font-size: 30px;
+    }
+    .box1{
+        margin-top: 30px;
+    }
+    .afroj{
+        margin: 30px 0px 20px;
+    }
+    
 }
 
 
-@media screen and (max-width: 600px) {
+
+@media (max-width: 769px) {
     html{
         overflow-x: hidden;
     }
 
     .bg-img{
         background-repeat: no-repeat;
-        background-size: auto;
     }
     .pad{
         padding: 0px 15px;
-        margin-top: 550px;
     }
     header{
         justify-content: space-between;
-        padding: 0 15px;
+        padding: 0 40px 0 25px;
         border-bottom: 1px solid;
     }
     .head-button{
@@ -585,55 +693,29 @@ li>a:hover{
         color: black;
         transition: all ease-in-out 0.3s;
       }
+
       .menu-icon{
-        font-size: 30px;
-        cursor: pointer;
-        z-index: 1;
-        color: white;
+        display: block;
       }
-      .cross{
-        font-size: 30px;
-        cursor: pointer;
-        z-index: 1;
-        display: none;
-        color: white;
-      }
+    
        
   
+section{
+    margin: 0px 20px;
+}
+.hero-left{
+    margin-top: 230px;
+}
+.hero-left>h1{
+    font-size: 45px;
+    width: 350px;
+}
     
     
-    
-    section{
-        flex-direction: column;
-        margin: 0px;
-    }
-    .hero-left{
-        margin: 30px;
-        margin-top: 150px;
-    }
-    .hero-left>h1{
-        font-size: 50px;
-        width: 100%;
-        color: white;
-        margin-bottom: 0px;
-    }
-    .hero-left>p{
-        color: #ffffff;
-        width: 100%;
-        font-size: 18px;
-    }
-    .hero-buttons{
-        display: flex;
-        justify-content: space-between;
-    }
-    .hero-buttons>.button2{
-        margin-left: 0px;
-    }
-
     
     
     .hero-right{
-        margin-top: 100px;
+        margin-top: 30px;
         background-color: #00002c;
         color: white;
     }
@@ -644,30 +726,28 @@ li>a:hover{
     form>input[type="submit"]:hover{
         background-color: white;
         color: black;
-
     }
 
 
     .text-area{
-        margin-top: 80px;
+        margin-top: 100px;
     }
     .text-area>h1{
-        font-size: 30px;
+        font-size: 35px;
     }
 
     
     
     .div-area1{
-        flex-direction: column;
+        flex-wrap: wrap;
         align-content: space-between;
-        height: 1000px;
+        gap: 10px;
         margin-top: 10px;
         padding-bottom: 0px;
-        align-items: center;
+        justify-content: center;
     }
     .div{
         width: 350px;
-        opacity: 0.8;
     }
     .div>.img-text{
         padding: 20px 0px;
@@ -679,20 +759,21 @@ li>a:hover{
     }
     .div>.list{
         padding: 20px 40px;
-        font-weight: 600;
     }
     
     
     .div-area2{
-        flex-direction: column;
-        margin-top: 10px;
-        align-items: center;
+        flex-wrap: wrap;
         align-content: space-between;
-        height: 700px;
-        padding-bottom: 0;
+        gap: 10px;
+        margin-top: 10px;
+        padding-bottom: 0px;
+        justify-content: center;
     }
     .div-area2>.div{
         align-items: center;
+        text-align: center;
+        padding: 15px 0;
     }
 
     
@@ -709,7 +790,7 @@ li>a:hover{
     }
     .mega-container>.container1>.area{
         display: flex;
-        width: 180px; 
+        width: 300px; 
     }
     .container1>.area>i{
         margin-right: 10px;
@@ -737,68 +818,204 @@ li>a:hover{
 
     
     .main-pricing{
-        flex-direction: column;
-        margin-top: 0px;
-        align-items: center;
+        display: flex;
+        margin-top: 50px;
     }
     .pricing{
-        width: 300px;
-        margin-bottom: 50px;
+        width: 200px;
+        padding: 10px;
     }
-    
-    
-    .getintouch{
-        flex-direction: column;
-        align-items: start;
-        padding: 20px;
+    .pricing>.pricing-text>.p1{
+        width: auto;
+        margin-left: 0px;
         padding-top: 0px;
+        font-size: 15px;
     }
-    .getintouch>.one{
-        width: 350px;
+    .pricing>.pricing-text>.p2{
+        padding-top: 0px;
+        margin-bottom: 20px;
     }
-    .getintouch>.two{
-        margin-right: 0px;
+    .pricing-text>.p2>span{
+        font-size: 25px;
     }
-
-
-    footer{
-        flex-direction: column;
-        align-items: start;
-        padding-left: 30px;
+    .pricing-text>.p2>span>sup{
+        font-size: 10px;
     }
-    .box{
+    .check>span>i{
+        margin-right: 5px;
+        margin-bottom: 10px;
+        font-size: 13px;
+        width: 20px;
+        height: 20px;
+    }
+    .check2>span>i{
+        margin-right: 5px;
+        margin-bottom: 10px;
+        font-size: 13px;
+        width: 20px;
+        height: 20px;
+    }
+    .check>span{
+        font-size: 13px;
+    }
+    .check2>span{
+        font-size: 13px;
+    }
+    .pricing>button{
         width: 100%;
-    }
-    .box>p{
-        color: #514e4e;
-        font-size: 18px;
-        margin-top: 0px;
-    }
-    .box>.icon>i{
-        color: #1c8bd1;
-        margin-right: 30px;
-        font-size: 30px;
+        margin: 20px 0 0 0;
+        padding: 15px;
+        border: none;
+        background-color: #1c8bd1;
+        color: white;
+        border-radius: 5px;
+        font-weight: bold;
         cursor: pointer;
     }
-    .box1>li>a{
-        font-size: 18px;
+    
+        /* PRICING TWO */
+    .pricing2{
+        width: 250px;
+        padding: 10px 20px;
     }
-    .box1>li{
-        margin-bottom: 10px;
+    .pricing2>.pricing-text{
+        margin-top: 50px;
     }
-    .box1{
-        margin-top: 20px;
+    .pricing2>.pricing-text>.p1{
+        width: auto;
+        margin-left: 0px;
+        padding-top: 0px;
+        font-size: 16px;
     }
-    .afroj{
-        text-align: center;
-        margin: 30px 0px;
-        color: #1773ac;
-        font-size: 18px;
+    .pricing2>.pricing-text>.p2{
+        padding-top: 0px;
+        margin-bottom: 20px;
+    }
+    .pricing2>button{
+        margin: 20px 0 0 0;
     }
     
-    li>a:hover{
-        color: #1c8bd1;
-        transition: all 0.3s ease-in-out;
-    }
     
+   
+.getintouch{
+    padding: 0 10px;
+}
+.getintouch>.one{
+    width: 300px;
+    text-align: justify;
+}
+ 
+
+footer{
+    margin-top: 0px;
+    gap: 20px;
+}
+.box{
+    width:200px;
+}
+.box>p{
+    color: #514e4e;
+    margin: 28px 0px;
+    font-size: 18px;
+}
+.box>.icon>i{
+    margin-right: 20px;
+    font-size: 30px;
+}
+.box1>li{
+    margin-bottom: 10px;
+}
+.box1>li>a{
+    font-size: 18px;
+}
+.box1{
+    margin-top: 18px;
+}
+.afroj{
+    margin: 30px 0px 20px;
+}
+}
+
+@media (max-width: 426px) {
+    header{
+        padding: 0 20px 0 15px;
+        }
+    
+        .pad{
+            padding: 550px 0 0 0;
+        }
+  
+section{
+    flex-direction: column;
+    margin: 0px 0px;
+}
+
+    
+    
+    .hero-right{
+        margin-top: 100px;
+    }
+
+
+
+    .mega-container>.container1>.area{
+        width: 180px; 
+    }
+
+
+    
+    .main-pricing{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 0px;
+    }
+    .pricing{
+        width: 250px;
+        padding: 10px;
+        margin: 0;
+    }
+
+    
+   
+.getintouch{
+    flex-direction: column;
+    align-items: start;
+    padding: 10px;
+}
+.getintouch>.one{
+    width: auto;
+}
+ 
+
+footer{
+    flex-direction: column;
+    align-items: start;
+    padding-left: 20px;
+    margin-top: 0px;
+    gap: 0px;
+}
+.box{
+    width:200px;
+}
+.box>p{
+    color: #514e4e;
+    margin: 28px 0px;
+    font-size: 18px;
+}
+.box>.icon>i{
+    margin-right: 20px;
+    font-size: 30px;
+}
+.box1>li{
+    margin-bottom: 10px;
+}
+.box1>li>a{
+    font-size: 18px;
+}
+.box1{
+    margin-top: 18px;
+}
+.afroj{
+    margin: 30px 
 }
